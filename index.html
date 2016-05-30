@@ -3,12 +3,54 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="user-scalable=no">
-<link rel="stylesheet" type="text/css" href="./breakout.css">
-<title>Breakout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ed Schiebel</title>
+<style>
+body {
+    margin: 1em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+code {
+    font-family: Consolas, Courier-new, fixed;
+}
+</style>
 </head>
 <body>
-<div id="game">one moment please</div>
-<script src='./bundle.js'></script>
+<h1>Ed Schiebel</h1>
+<p>
+    I'm a developer by day and hand drummer by night (or I was,
+    <a href="https://www.facebook.com/padula.oblongata/">the</a>
+    <a href="https://web.archive.org/web/20140106024618/http://padulaoblongata.com/">band</a> broke up).
+    As you can tell from this stunning page, my design sensibilities are pretty much
+    Google circa 2000.
+</p>
+<h2>Breakout</h2>
+<p>
+    I've been building a pretty complex single page app using React at my
+    day job, and have been pleased with its performance. I was curious though. Could
+    React be used to build a video game, albeit a simple one.
+    <a href="https://en.wikipedia.org/wiki/Breakout_(video_game)">Breakout</a>
+    is a classic old school game I liked back in the day, and with limited moving parts
+    there was a reasonable chance both React and I would be successful.
+</p><p>
+    Along with <a href="https://facebook.github.io/react/">React</a>, I'm using
+    <a href="http://alt.js.org/">Alt</a> for my Flux actions and stores implementation,
+    and I'm keeping all the game's state in
+    <a href="https://facebook.github.io/immutable-js/">Immutable data structures</a>.
+    The game pieces are all <code>divs</code> absolutely positioned on the <i>court</i>. Game play
+    is handled by calculating the position of the ball, paddle,
+    and the state of the bricks in the wall every tick of <code>requestAnimationFrame</code>, which
+    <code>GameStore</code> saves away in its state. The top-level component, <code>Breakout</code>, listens for
+    <code>GameStore</code> changes, and renders the field of play.
+</p><p>
+    The verdict is, yes, React's virtual DOM can keep up. The game plays well in chrome
+    and ie11. Firefox glitches off and on, and can't keep the ball rendered on the
+    screen if it gets moving too fast (which I don't understand yet, since it's being drawn
+    the same number of times no matter how fast it's moving). I'd like to figure out what's going on there.
+</p><p>
+    By now, I bet you're curious. You can play it <a href="breakout/index.html">right here</a>.  Game play is
+    dead simple, and there are a zillion things I could do to make it more interesting as a game, but
+    that wasn't the point. (Though every weekend the dog gets me up a good 2-3 hours before my wife,
+    so I bet there will be some tinkering going on.)
 </body>
 </html>
