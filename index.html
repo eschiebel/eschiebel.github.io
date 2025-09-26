@@ -12,6 +12,7 @@ body {
 }
 code {
     font-family: Consolas, Courier-new, fixed;
+    font-size: 125%;
 }
 section {
     max-width: 60em;
@@ -36,10 +37,32 @@ section {
 </p>
 </section>
 <section>
+    <h2>Clavistry</h2>
+    <p>
+        <a href="https://eschiebel.github.io/Clavistry">Clavistry</a> is a web drum machine that plays Afro-Caribbean rhythms. It's a React app
+        built with vite and using Elementary Audio for the audio engine. The rhythms are repreented
+        as tablature in json files. You can mute individual parts and play along!
+    
+    <p>
+        FWIW, AI wrote almost all of the code. I have mixed emotions about this. I've been looking forward to working on this project for some time, 
+        but with AI's help I got a 
+        working app in an afternoon and in a fairly polished state in three days. It wasn't easy, but certainly faster than doing it by hand. 
+        I know what's going on, but not nearly to a depth if I had done it alone. I guesss this is what it means to be a software engineer now.
+    </p>
+    <p>
+       Clavistry is still very much a work in progress. Keep checking back and see what's new. Some plans include:
+        <ul>
+            <li>Adding more rhythms. Maybe organizing them by country of origin?</li>
+            <li>Adding more samples.</li>
+            <li>Adding a way to upload your own rhythms.</li>
+        </ul>
+    </p>
+</section>
+<section>
 <h2>Breakout</h2>
 <p>
-    I've been building a pretty complex single page app using React at my
-    day job, and have been pleased with its performance. I was curious though. Could
+    In a previous job I was building a pretty complex single page app using React, 
+    and was pleased with its performance. I was curious though. Could
     React be used to build an arcade game, albeit a simple one.
     <a href="https://en.wikipedia.org/wiki/Breakout_(video_game)">Breakout</a>
     is a classic old school game I liked back in the day, and with limited moving parts
@@ -47,7 +70,7 @@ section {
 </p><p>
     Along with <a href="https://facebook.github.io/react/">React</a>, I'm using
     <a href="http://alt.js.org/">Alt</a> for my Flux actions and stores implementation,
-    and I'm keeping all the game's state in
+    (remember when <i>Flux</i> was a thing?) and I'm keeping all the game's state in
     <a href="https://facebook.github.io/immutable-js/">Immutable data structures</a>.
     The game pieces are all <code>divs</code> absolutely positioned on the <i>court</i>. Game play
     is handled by calculating the position of the ball, paddle,
@@ -59,8 +82,7 @@ section {
 </p><p>
     By now, I bet you're curious. You can play it <a href="breakout/index.html">right here</a>.  Game play is
     dead simple, and there are a zillion things I could do to make it more interesting as a game, but
-    that wasn't the point. (Though every weekend the dog gets me up a good 2-3 hours before my wife,
-    so I bet there will be some tinkering going on.)
+    that wasn't the point. 
 </p>
 <p>
 <button onclick="window.location='breakout/index.html'">Play</button>
