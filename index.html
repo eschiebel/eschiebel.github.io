@@ -22,8 +22,16 @@ section {
 <body>
 <h1>Ed Schiebel</h1>
 <section>
+    <p>
+        I'm a passionate and experienced software engineer with a wide range of professional experience. I'm an advocate for accessibility, 
+        a capable teacher, and a fast learner. I'm a problem solver who quickly delivers quality solutions to any type of problem, the harder, 
+        the better.
+    </p>
+    <p>
+    I love what I do. I’m someone who still has a blast creating software and loves watching users use it.
+    </p>
 <p>
-    I'm a developer by day and hand drummer by night (or I was,
+    Developer by day and hand drummer by night (or I was,
     <a href="https://www.facebook.com/padula.oblongata/">the</a>
     <a href="https://web.archive.org/web/20140106024618/http://padulaoblongata.com/">band</a> broke up).
 	I am also Maker's Mark Ambassador #1726391. Now if that doesn't impress you, I don't know what will.
@@ -32,7 +40,7 @@ section {
 </p>
 <p>
     Here are some samples of my work.  The source can be found on <a href="https://github.com/eschiebel">GitHub</a>.
-    My CV is <a href="https://stackoverflow.com/CV/eschiebel">on Stack Overflow</a>.
+    My resume is <a href="./SchiebelResume2025.pdf">here</a>.
     <p>
 </p>
 </section>
@@ -40,23 +48,24 @@ section {
     <h2>Clavistry</h2>
     <p>
         <a href="https://eschiebel.github.io/Clavistry">Clavistry</a> is a web drum machine that plays Afro-Caribbean rhythms. It's a React app
-        built with vite and using web audio for the audio engine. The rhythms are repreented
+        built with vite and uses web audio for the audio engine. The rhythms are represented
         as tablature in json files. You can mute individual parts and play along!
     
     <p>
-        FWIW, AI wrote almost all of the code. I have mixed emotions about this. I've been looking forward to working on this project for some time, 
-        but with AI's help I got a 
-        working app in an afternoon and in a fairly polished state in three days. It wasn't easy, but certainly faster than doing it by hand. 
-        I know what's going on, but not nearly to a depth if I had done it alone. I guesss this is what it means to be a software engineer now.
+        I’ve been looking forward to building this for a while. With AI’s help I had a working app by the end of the day, something 
+        fairly polished within three, and in its current state within a week. I wouldn't say it was easy, 
+        but it certainly was fast. AI wrote most of the code, and while I understand what’s 
+        going on under the hood, I don’t know it as deeply as I would’ve if I’d built it solo. 
+        I guess this is what it means to be a software engineer now.
     </p>
     <p>
        Clavistry is still very much a work in progress. Keep checking back and see what's new. Some plans include:
         <ul>
             <li>Adding more rhythms. Maybe organizing them by country of origin?</li>
             <li>Adding more samples.</li>
-            <li>Adding a way to upload your own rhythms.</li>
+            <li>Adding a way to edit or upload new rhythms.</li>
         </ul>
-    </p>
+    </p>https://marketplace.windsurf.com/vscode/asset/tekumara/typos-vscode/0.1.44/Microsoft.VisualStudio.Services.Icons.Default?targetPlatform=darwin-arm64
 </section>
 <section>
 <h2>Breakout</h2>
@@ -68,10 +77,10 @@ section {
     is a classic old school game I liked back in the day, and with limited moving parts
     there was a reasonable chance both React and I would be successful.
 </p><p>
-    Along with <a href="https://facebook.github.io/react/">React</a>, I'm using
+    Along with <a href="https://react.dev/">React</a>, I'm using
     <a href="http://alt.js.org/">Alt</a> for my Flux actions and stores implementation,
     (remember when <i>Flux</i> was a thing?) and I'm keeping all the game's state in
-    <a href="https://facebook.github.io/immutable-js/">Immutable data structures</a>.
+    <a href="https://immutable-js.com/">Immutable data structures</a>.
     The game pieces are all <code>divs</code> absolutely positioned on the <i>court</i>. Game play
     is handled by calculating the position of the ball, paddle,
     and the state of the bricks in the wall every tick of <code>requestAnimationFrame</code>, which
@@ -85,12 +94,12 @@ section {
     that wasn't the point. 
 </p>
 <p>
-<button onclick="window.location='breakout/index.html'">Play</button>
+<button onclick="window.open('breakout/index.html')">Play</button>
 </p>
 <h2>Romanizer</h2>
 <p>
     A solution to the <a href="http://agilekatas.co.uk/katas/romannumerals-kata">Roman Numerals Agile Kata</a>, built
-    as part of a job interview. Try it <a href="https://quick-water.hyperdev.space/">here</a>.
+    as part of a job interview.
 </p>
 </section>
 </body>
